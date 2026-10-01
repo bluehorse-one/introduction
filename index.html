@@ -1,0 +1,303 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>우림바이오 기업 소개</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Gowun+Batang:wght@700&family=IBM+Plex+Mono:ital,wght@0,500;1,400&display=swap">
+<style>
+/* Layout: single reading column (max 1080px), sections separated by soil-toned bands; strain lineup as a 4-up specimen grid */
+:root{
+  --bg:#f6f7f3; --surface:#ffffff; --band:#eceee6;
+  --ink:#1c2420; --muted:#5b665f; --line:#d7dccf;
+  --accent:#2f6b4f; --accent-soft:#e1ece4; --amber:#a86a1c;
+  --f-display:"Gowun Batang","Noto Serif KR",serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121714; --surface:#1a211d; --band:#171d19;
+  --ink:#e6ebe5; --muted:#9aa69e; --line:#2c3630;
+  --accent:#7fc29d; --accent-soft:#1f3328; --amber:#e0a656; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121714; --surface:#1a211d; --band:#171d19;
+  --ink:#e6ebe5; --muted:#9aa69e; --line:#2c3630;
+  --accent:#7fc29d; --accent-soft:#1f3328; --amber:#e0a656; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.7;word-break:keep-all}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.3}
+h2{font-family:var(--f-display);font-size:clamp(1.5rem,3.2vw,2rem)}
+h3{font-size:1.08rem;font-weight:600}
+p{margin:0}
+.eyebrow{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.lead{color:var(--muted);max-width:62ch}
+
+/* header */
+.top{border-bottom:1px solid var(--line);background:var(--surface)}
+.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding-block:14px}
+.brand{font-weight:700;font-size:1.05rem}
+.brand small{font-weight:400;color:var(--muted);margin-left:8px;font-size:.8rem}
+.nav{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.9rem}
+.nav a{color:var(--muted);text-decoration:none}
+.nav a:hover{color:var(--accent)}
+
+/* hero */
+.hero{padding-block:56px 48px}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+.hero h1{font-family:var(--f-display);font-size:clamp(2rem,5vw,3.1rem);margin-block:12px 18px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.facts{display:grid;gap:0;border-top:2px solid var(--ink)}
+.facts div{display:grid;grid-template-columns:7em 1fr;gap:12px;padding-block:11px;border-bottom:1px solid var(--line);font-size:.95rem}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;font-weight:500;min-width:0}
+
+section{padding-block:56px}
+section.band{background:var(--band)}
+.sec-head{display:grid;gap:10px;margin-bottom:28px}
+
+/* business areas */
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.area{display:grid;gap:8px;align-content:start;padding-top:16px;border-top:1px solid var(--line)}
+.area p{color:var(--muted);font-size:.95rem}
+.area .k{font-family:var(--f-mono);font-size:.78rem;color:var(--amber)}
+
+/* strains */
+.strains{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.strain{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px;display:grid;gap:10px;align-content:start}
+.strain .code{font-family:var(--f-mono);font-weight:500;font-size:1.15rem;color:var(--accent)}
+.strain .sci{font-family:var(--f-mono);font-style:italic;font-size:.85rem;color:var(--ink)}
+.strain .ko{font-size:.9rem;color:var(--muted)}
+.strain .reg{margin-top:6px;padding-top:10px;border-top:1px dashed var(--line);font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.strain .reg b{font-family:var(--f-mono);font-weight:500;color:var(--ink)}
+.note{margin-top:14px;font-size:.82rem;color:var(--muted)}
+
+/* process */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s}
+.steps li{counter-increment:s;padding:18px 16px 4px 0;border-top:2px solid var(--accent);display:grid;gap:6px;align-content:start;min-width:0}
+.steps li::before{content:counter(s);font-family:var(--f-mono);font-size:.8rem;color:var(--accent)}
+.steps p{font-size:.9rem;color:var(--muted)}
+.cycle{display:inline-block;margin-top:22px;background:var(--accent-soft);color:var(--ink);padding:10px 14px;border-radius:4px;font-size:.92rem}
+.cycle b{color:var(--accent)}
+
+/* products */
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.product{display:grid;gap:8px;align-content:start}
+.product .tag{font-size:.78rem;color:var(--amber);font-weight:600}
+.product h3{font-family:var(--f-display);font-size:1.4rem}
+.product p{color:var(--muted);font-size:.95rem}
+
+/* research list */
+.rnd{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+.rnd div{padding-block:16px;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.rnd dt{font-weight:600}
+.rnd dd{margin:0;color:var(--muted);font-size:.95rem}
+
+/* sites */
+.sites{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.site{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px;display:grid;gap:8px}
+.site .role{font-size:.78rem;letter-spacing:.1em;color:var(--accent);font-weight:600}
+.site h3{font-family:var(--f-display);font-size:1.5rem}
+.site p{color:var(--muted);font-size:.95rem}
+
+footer{border-top:1px solid var(--line);padding-block:32px 48px;font-size:.85rem;color:var(--muted)}
+footer .wrap{display:grid;gap:14px}
+.disclaimer{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;color:var(--ink)}
+footer ul{margin:0;padding-left:1.2em;display:grid;gap:4px}
+footer a{word-break:break-all}
+
+@media (max-width:860px){
+  .hero .wrap,.sites,.rnd{grid-template-columns:1fr}
+  .areas,.products{grid-template-columns:1fr}
+  .strains{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr}
+  .steps li{padding:14px 0;border-top-width:1px}
+}
+@media (max-width:440px){.strains{grid-template-columns:1fr}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">우림바이오<small>농축산 미생물 연구기업 · 비공식 소개</small></div>
+    <nav class="nav" aria-label="섹션">
+      <a href="#areas">사업 분야</a><a href="#strains">미생물</a><a href="#process">서비스</a><a href="#products">제품</a><a href="#rnd">연구·성과</a><a href="#sites">사업장</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Agricultural &amp; Livestock Microbiology</p>
+        <h1>살아 있는 미생물을<br><em>농장 현장에 맞춰</em> 배양해 공급합니다</h1>
+        <p class="lead">우림바이오는 농업·축산·환경 분야의 유용 미생물을 연구하고 생산하는 바이오 기업입니다. 토양과 축산분뇨 시료를 분석한 뒤, 농장마다 맞춤 처방한 미생물을 직접 배양해 공급하는 방식이 특징입니다.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>대표</dt><dd>홍석일 (이학 박사)</dd></div>
+        <div><dt>본사</dt><dd>경기도 화성시</dd></div>
+        <div><dt>생산 공장</dt><dd>전라남도 영광군</dd></div>
+        <div><dt>분야</dt><dd>농업·축산 미생물, 사료첨가제, 축산 악취 저감</dd></div>
+        <div><dt>수상</dt><dd>화성시 기업인의 날 기술혁신분야 중소기업대상</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section id="areas" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">사업 분야</p>
+        <h2>농업, 축산, 환경 세 현장에 미생물을 적용합니다</h2>
+      </div>
+      <div class="areas">
+        <article class="area">
+          <span class="k">SOIL</span>
+          <h3>농업 · 토양 관리</h3>
+          <p>토양 미생물, 선충, 바이러스와 이화학 성분을 분석해 작물 재배에 맞는 미생물 처방을 제공합니다. 토양 선충 방제용 친환경 유기농자재도 개발했습니다.</p>
+        </article>
+        <article class="area">
+          <span class="k">LIVESTOCK</span>
+          <h3>축산 · 가축 건강</h3>
+          <p>가축 질병, 특히 양돈 PRRS 저감을 목표로 한 미생물 사료첨가제를 개발했습니다. 폐사율을 낮추고 사료 효율을 높이는 데 초점을 둡니다.</p>
+        </article>
+        <article class="area">
+          <span class="k">ENVIRONMENT</span>
+          <h3>환경 · 축산 악취</h3>
+          <p>축산분뇨 시료 분석을 바탕으로 현장 맞춤형 미생물 탈취제를 만들어 대용량(1톤 단위)으로 공급합니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="strains">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">미생물 라인업</p>
+        <h2>조달 등록된 4종의 기본 균주 제품</h2>
+        <p class="lead">현장 처방의 기본이 되는 단일 균주 제품입니다. 농가와 기관이 조달로 구매할 수 있도록 등록되어 있습니다.</p>
+      </div>
+      <div class="strains">
+        <article class="strain">
+          <span class="code">우림-BS</span>
+          <span class="sci">Bacillus subtilis</span>
+          <span class="ko">바실러스 서브틸리스 (고초균)</span>
+          <span class="reg">조달 등록번호 <b>23614152</b></span>
+        </article>
+        <article class="strain">
+          <span class="code">우림-LAB</span>
+          <span class="sci">Lactobacillus plantarum</span>
+          <span class="ko">락토바실러스 플란타럼 (유산균)</span>
+          <span class="reg">조달 등록번호 <b>23614151</b></span>
+        </article>
+        <article class="strain">
+          <span class="code">우림-PSB</span>
+          <span class="sci">Photosynthetic bacteria</span>
+          <span class="ko">광합성세균</span>
+          <span class="reg">조달 등록번호 <b>23614150</b></span>
+        </article>
+        <article class="strain">
+          <span class="code">우림-YS</span>
+          <span class="sci">Yeast</span>
+          <span class="ko">효모균</span>
+          <span class="reg">조달 등록번호 <b>23614158</b></span>
+        </article>
+      </div>
+      <p class="note">특허 미생물: UB-156, UB20-30 · 자동화 생산설비로 생산능력을 최대 10배까지 높였다고 소개되어 있습니다.</p>
+    </div>
+  </section>
+
+  <section id="process" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">현장 맞춤형 서비스</p>
+        <h2>분석에서 공급, 사후관리까지 한 흐름으로</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>시료 채취</h3><p>농장의 토양이나 축산분뇨 시료를 확보합니다.</p></li>
+        <li><h3>분석</h3><p>미생물·선충·바이러스와 이화학 성분을 분석합니다.</p></li>
+        <li><h3>처방</h3><p>분석 결과에 맞춰 균주 조합과 사용법을 정합니다.</p></li>
+        <li><h3>배양·공급</h3><p>살아 있는 미생물을 배양해 농장에 직접 공급합니다.</p></li>
+        <li><h3>사후관리</h3><p>농장 상태를 관리하고 필요하면 처방을 조정합니다.</p></li>
+      </ol>
+      <p class="cycle">살아 있는 미생물이라 <b>15~20일 주기</b>로 직접 공급합니다.</p>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">대표 제품</p>
+        <h2>현장 문제에서 출발한 제품</h2>
+      </div>
+      <div class="products">
+        <article class="product">
+          <span class="tag">축산 · 사료첨가제</span>
+          <h3>대끼리</h3>
+          <p>미생물 사료첨가제입니다. 폐사율 감소와 사료 효율 개선을 목표로 하며, 아프리카돼지열병(ASF) 억제 효과에 대한 해외 공동연구가 진행되었습니다.</p>
+        </article>
+        <article class="product">
+          <span class="tag">농업 · 친환경 유기농자재</span>
+          <h3>바벨론</h3>
+          <p>제주 지역의 토양 선충을 방제하기 위해 오랜 연구 끝에 개발한 친환경 유기농자재입니다.</p>
+        </article>
+        <article class="product">
+          <span class="tag">환경 · 악취 저감</span>
+          <h3>맞춤형 미생물 탈취제</h3>
+          <p>농장별 분뇨 분석 결과에 맞춰 배양한 탈취제를 대형 트럭으로 1톤 단위 공급합니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="rnd" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">연구 · 성과</p>
+        <h2>기술 차별화와 대외 협력</h2>
+      </div>
+      <dl class="rnd">
+        <div><dt>원료 제조 기술</dt><dd>유용 미생물이 항생·항바이러스 물질을 스스로 만들도록 유도하는 독자 기술을 보유하고 있습니다.</dd></div>
+        <div><dt>국제 공동연구</dt><dd>태국 쭐랄롱꼰 대학과 '대끼리'의 아프리카돼지열병 억제 효과를 공동 연구했습니다.</dd></div>
+        <div><dt>수상</dt><dd>화성시 기업인의 날에서 기술혁신분야 중소기업대상을 받았습니다.</dd></div>
+        <div><dt>교육 프로그램</dt><dd>일본 등 선진 농업 현장을 방문하는 연수 프로그램을 운영한 바 있습니다.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="sites">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">사업장</p>
+        <h2>연구는 화성에서, 생산은 영광에서</h2>
+      </div>
+      <div class="sites">
+        <article class="site">
+          <span class="role">본사</span>
+          <h3>경기도 화성시</h3>
+          <p>경영과 연구개발, 국내외 영업을 맡습니다.</p>
+        </article>
+        <article class="site">
+          <span class="role">생산 공장</span>
+          <h3>전라남도 영광군</h3>
+          <p>미생물 배양과 생산을 맡는 공장으로, 최근 증설되었습니다.</p>
+        </article>
+      </div>
+      <p class="note">상세 주소와 연락처는 공개 기사에서 확인되지 않아 싣지 않았습니다. 제품 문의는 회사 공식 창구로 확인해 주세요.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="disclaimer">이 페이지는 언론 기사 등 공개 자료를 바탕으로 정리한 <b>비공식 기업 소개 자료</b>이며, 우림바이오의 공식 웹사이트가 아닙니다. 제품 효능이나 등록 정보는 회사와 공식 기관에서 다시 확인하시기 바랍니다.</p>
+    <p>참고 자료</p>
+    <ul>
+      <li><a href="https://handmk.com/news/articleView.html?idxno=25440" target="_blank" rel="noopener">핸드메이커 · 농업과 축산업에서 미생물의 역할을 알린다 (홍석일 대표 인터뷰)</a></li>
+      <li><a href="http://www.newsam.co.kr/news/article.html?no=32656" target="_blank" rel="noopener">뉴스앤 · 농축산 미생물 전문 연구기업 '우림바이오'</a></li>
+      <li><a href="http://www.civilreporter.co.kr/news/articleView.html?idxno=536778" target="_blank" rel="noopener">한국시민기자협회 · 화성특례시 중소기업지원 자문단 공동 포럼</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body></html>
